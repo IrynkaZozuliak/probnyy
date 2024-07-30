@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Market Website</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+</head>
+<body>
+    <header></header>
+    <section class="slider_container">
+        <div class="container">
+            <div class="swiper card_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide-1.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide-2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide-3.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide5.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide6.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide7.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide8.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="images/slide9.jpg">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next coool"></div>
+                <div class="swiper-button-prev coool"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 4, 
+            spaceBetween: 30,
+            loop: true,
+            speed: 500, 
+            pagination: {
+                el: ".swiper-pagination", 
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+            },
+
+        });
+
+    </script>
+</body>
+</html>
+    
