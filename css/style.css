@@ -16,14 +16,14 @@ img {
 }
 
 .splide__arrow  {
-    opacity: 1;
+    opacity: 0;
     width: 2.5rem;
     height: 2.5rem;
-    background: #fbc531;
+    background: #fbc531 !important;
 }
 
 .splide__pagination {
-    bottom: -2rem;
+    bottom: -2rem !important;
 }
 
 .slider_wrapper .splide__pagination__page.is-active {
