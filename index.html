@@ -129,7 +129,7 @@
 
 
 
-
+    <div class="slider_wrapper">
     <div class="splide">
         <div class="splide__track">
             <div class="splide__list">
@@ -181,8 +181,11 @@
                     </div>
                 </div>
 
+                 
+
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -227,16 +230,25 @@
         var splide = new Splide ('.splide', {
             perPage: 4,
             perMove: 1,
-            gap: '2rem',
+            gap: '1.5rem',
+            padding: '3rem',
+            type: 'loop',
+            drag: 'free',
+            snap: true,
+            arrows: true,
+            pagination: true,
+            autoplay: true,
             breakpoints: {
                 640: {
                     perPage: 2,
                     gap: '.7rem',
+                    padding: '1.5rem',
                   
                 },
                 480: {
                     perPage: 1,
                     gap: '.7rem',
+                    padding: '1.5rem',
               
                 },
             },
