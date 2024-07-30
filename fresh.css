@@ -1,0 +1,238 @@
+.freshDeals_block_position {
+    margin-top: 115px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pp_hh23_elem_position_freshD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-bottom: 50px;
+}
+
+.pp_freshDeals_text {
+    font-size: 16px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f69946;
+    line-height: 1.3;  
+  }
+  
+  .hh2_freshDeals_text {
+    font-size: 42px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2c2c2c;
+    line-height: 1.2; 
+  }
+  
+  .hh3_freshDeals_text {
+    font-size: 18px;
+    font-family: "AR One sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #2c2c2c;
+    line-height: 1.56;
+    text-align: center; 
+
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+
+
+
+
+
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+     
+    justify-content: center;
+  }
+  
+  .tab {
+    order: 1;
+  }
+
+  
+  .tab-panel {
+    display: none;
+    order: 10;
+    min-width: 100%;
+    flex: 1;
+  }
+  
+  .tab:has(.tab-actor:checked) + .tab-panel {
+    display: initial;
+  }
+  
+  @media screen and (max-width: 480px) {
+    :is(.tab, .tab-panel) {
+      order: initial;
+    }
+  
+    .tabs {
+      flex-direction: column;
+    }
+  
+    .tab {
+      width: 100%;
+    }
+  }
+
+  .tabs {
+    gap: 0.75rem 0;
+  }
+  
+  .tab {
+    padding: 8px 16px;
+    font-weight: bold;
+
+    font-size: 14px;
+    font-family: "Istok Web", sans-serif;
+    color: #858585
+    
+  }
+  
+  .tab:has(.tab-actor:checked) {
+    border-bottom: solid;
+    border-color: #f69946;
+    padding-bottom: 15px;
+
+    font-size: 14px;
+    font-family: "Istok Web", sans-serif;
+    color: #333333;
+     
+  }
+
+
+  .hrhrhr_position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hrhrhr {
+    width: 1190px;
+    margin-top: -12px;
+    margin-bottom: 25px;  
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .tabs {
+      gap: 0;
+      height: 100%;
+    }
+  
+    .tab-panel {
+      display: block;
+      flex: 0;
+      max-width: 100%;
+      overflow-y: auto;
+      transition: 300ms flex;
+    }
+  
+    .tab:has(.tab-actor:checked) + .tab-panel {
+      flex: 1;
+    }
+  }
+
+ 
+
+
+
+    .tab_elements_posiition_Fresh {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+    .content_text_freshDeals {
+        width: 275px;
+        background-color: #fbf4f0;
+    }
+
+    .content_position_freshDeals {
+        padding-top: 35px;
+        padding-bottom: 50px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .fotoelement_freshDeals {
+        width: 200px;
+    }
+
+    .hh3_freshFigs_text {
+        font-size: 18px;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #333333;
+        line-height: 1.4;
+    }
+
+    .pp_price_fresh_text {
+        font-size: 20px;
+        font-family: "Source Sans 3", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #a9c623;
+        line-height: 1.4;
+        text-decoration: none;
+    }
+
+
+ 
+    .buttom_personal_readings button[type="submit"] {
+        display: inline-block;
+        background: none;
+        border: 2px solid #a9c623;
+        color: #f69946;
+        border-radius: 5px;
+        font-size: 11px;
+        font-weight: 700;
+        font-style: normal;
+        cursor: pointer;
+        padding: 0.55rem 1.05rem;
+        transition: background 0.25s, color 0.25s;
+    }
+    
+    .buttom_personal_readings button[type="submit"]:hover {
+        color: #fff;
+        background: #a9c623;
+    }
+
+    .button__personal_container { 
+        width: 100px;
+        height: 45px;
+        border: none;
+        background-color: #2ab6ff;
+        text-align: center;
+        text-decoration: none;  
+        color: #322c2c;
+    
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+    
+        border-radius: 5px;
+        border-width: 5px;
+    }

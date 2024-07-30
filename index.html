@@ -6,75 +6,120 @@
     <title>Food Market Website</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="fresh.css" />
+    <style type="text/css">
+        .img_box img {
+            max-width: 100%;
+        }
+
+        .slider_container .container{
+            padding: 0 15px;
+            max-width: 1230px;
+            margin: 0 auto;
+        }
+
+        .card_slider{
+            padding: 50px 0;
+        }
+
+        .colorit {
+            color: gray;
+        }
+
     
+    
+
+    </style>
 </head>
 <body>
-    <header></header>
+
     <section class="slider_container">
         <div class="container">
             <div class="swiper card_slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide-1.jpg">
-                        </div>
+
+                    <div class="swiper-slide content_text_freshDeals">
+                        <div class="img_box content_position_freshDeals">
+                            <img src="img/freshDeals/b_limes.png" class="fotoelement_freshDeals">
+
+                            <h3 class="hh3_freshFigs_text">Limes</h3>
+                            <p class="pp_price_fresh_text">1,00USD</p>
+
+                            <div class="buttom_personal_readings">
+                                <form name="form-btn_personal_readings" >
+                                    <button class="button__personal_container" type="submit">Buy Now</button>
+                                </form> 
+                            </div> 
+                        </div>   
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide-2.jpg">
-                        </div>
+                    <div class="swiper-slide content_text_freshDeals">
+                        <div class="img_box content_position_freshDeals">
+                            <img src="img/freshDeals/c_peaches.png" class="fotoelement_freshDeals">
+
+                            <h3 class="hh3_freshFigs_text">Peaches</h3>
+                            <p class="pp_price_fresh_text">3,00USD</p>
+
+                            <div class="buttom_personal_readings">
+                                <form name="form-btn_personal_readings" >
+                                    <button class="button__personal_container" type="submit">Buy Now</button>
+                                </form> 
+                            </div> 
+                        </div>   
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide-3.jpg">
-                        </div>
+                    <div class="swiper-slide content_text_freshDeals">
+                        <div class="img_box content_position_freshDeals">
+                            <img src="img/freshDeals/d_tangerines.png" class="fotoelement_freshDeals">
+
+                            <h3 class="hh3_freshFigs_text">Tangerines</h3>
+                            <p class="pp_price_fresh_text">2,00USD</p>
+
+                            <div class="buttom_personal_readings">
+                                <form name="form-btn_personal_readings" >
+                                    <button class="button__personal_container" type="submit">Buy Now</button>
+                                </form> 
+                            </div> 
+                        </div>   
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide4.jpg">
-                        </div>
+                    <div class="swiper-slide content_text_freshDeals">
+                        <div class="img_box content_position_freshDeals">
+                            <img src="img/freshDeals/f_tomatoes.png" class="fotoelement_freshDeals">
+
+                            <h3 class="hh3_freshFigs_text">Tomatoes</h3>
+                            <p class="pp_price_fresh_text">4,00USD</p>
+
+                            <div class="buttom_personal_readings">
+                                <form name="form-btn_personal_readings" >
+                                    <button class="button__personal_container" type="submit">Buy Now</button>
+                                </form> 
+                            </div> 
+                        </div>   
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide5.jpg">
-                        </div>
-                    </div>
+                    <div class="swiper-slide content_text_freshDeals">
+                        <div class="img_box content_position_freshDeals">
+                            <img src="img/freshDeals/k_WaterMelon.png" class="fotoelement_freshDeals">
 
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide6.jpg">
-                        </div>
-                    </div>
+                            <h3 class="hh3_freshFigs_text">Water Melon</h3>
+                            <p class="pp_price_fresh_text">6,00USD</p>
 
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide7.jpg">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide8.jpg">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img_box">
-                            <img src="images/slide9.jpg">
-                        </div>
+                            <div class="buttom_personal_readings">
+                                <form name="form-btn_personal_readings" >
+                                    <button class="button__personal_container" type="submit">Buy Now</button>
+                                </form> 
+                            </div> 
+                        </div>   
                     </div>
 
                 </div>
-                <div class="swiper-button-next coool"></div>
-                <div class="swiper-button-prev coool"></div>
-                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-next colorit"></div>
+                <div class="swiper-button-prev colorit"></div>
+                <div class="swiper-pagination" style="--swiper-pagination-color: #453131"></div>
             </div>
 
         </div>
@@ -83,9 +128,9 @@
     <script type="text/javascript">
         var swiper = new Swiper(".card_slider", {
             slidesPerView: 4, 
-            spaceBetween: 30,
+            spaceBetween: 30, 
             loop: true,
-            speed: 500, 
+            speed: 500,
             pagination: {
                 el: ".swiper-pagination", 
                 clickable: true,
@@ -108,10 +153,9 @@
                     slidesPerView: 4,
                 },
             },
-
         });
-
     </script>
+   
 </body>
 </html>
     
