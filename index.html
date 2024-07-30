@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="fresh.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
     <style type="text/css">
         .img_box img {
             max-width: 100%;
@@ -120,6 +123,72 @@
 
         </div>
     </section>
+
+
+
+
+
+
+
+    <div class="splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide-1.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide-2.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide-3.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide4.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide5.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide6.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide7.jpg">
+                    </div>
+                </div>
+
+                <div class="splide__slide">
+                    <div class="img_box">
+                        <img src="images/slide8.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
         var swiper = new Swiper(".card_slider", {
@@ -150,6 +219,30 @@
                 },
             },
         });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+    <script type="text/javascript">
+        var splide = new Splide ('.splide', {
+            perPage: 4,
+            perMove: 1,
+            gap: '2rem',
+            breakpoints: {
+                640: {
+                    perPage: 2,
+                    gap: '.7rem',
+                  
+                },
+                480: {
+                    perPage: 1,
+                    gap: '.7rem',
+              
+                },
+            },
+        });
+        splide.mount();
+
     </script>
    
 </body>
