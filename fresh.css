@@ -236,3 +236,27 @@
         border-radius: 5px;
         border-width: 5px;
     }
+
+
+    body {
+      font-family: Arial, sans-serif;
+  }
+  
+  .currency {
+      margin: 25px;
+      cursor: pointer;
+      position: relative;
+  }
+  
+  .tooltip {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 10;
+      width: 150px;
+      text-align: center;
+  }
+  
